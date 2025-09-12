@@ -7,8 +7,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../style/style.css">
-    <script src="../script/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
@@ -18,7 +18,7 @@
     <!--------------navbar----------->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../Imags/logo1.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,33 +53,41 @@
             </div>
         </div>
     </nav>
-
-    <div class="hotelVaishali ">
-        <h1 class="py-3 text-center" style="background-color: orange;">Vaishali</h1>
-        <div style="background-color: rgb(46, 44, 44); padding: 10px;">
-            <div class="img" style="display: flex; align-items: center; justify-content: center;"><img style=" border: 5px solid blueviolet; border-radius: 5px ; background-color: rgb(41, 38, 38);" src="../Imags/hotelvaishali.jpeg" height="300px" width="500px" alt=""></div>
-            <button onclick="toggleMenu()" class="btn btn-outline-secondary">view Menu</button>
+    <div class="hotelgerman ">
+        <h1 class="py-3 text-center" style="background-color: orange; display: flex; justify-content:space-around; align-items: center;"><a href="index.html"><button style="border: none; height: 2rem; width: 2rem;"><b>←</b></button></a>German Bakery</h1>
+        <div class="c" style="padding: 10px; background-color: rgb(58, 53, 53);">
+            <div class="img" style="display: flex; align-items: center; justify-content: center;"><img style=" border: 5px solid blueviolet; border-radius: 5px ;" src="./Imags/german bekri.jpg" height="300px" width="500px" alt=""></div>
 
         </div>
     </div>
-    <div id="menu" class="menu py-2 " style="display: none; height:auto; width: 500px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img height="200px" width="200px" src="../Imags/vaishalimenu.avif" alt="#">
+    <h4 class="text-center">Menu</h4>
+    <div class="container" style="padding: 10px; background-color: rgb(58, 53, 53); height:auto; width: 500px; border: 1px solid black;">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Imags/spbiryanimenu6.webp" class="d-block w-100" alt="...">
                 </div>
-                <div class="col-md-3">
-                    <img height="200px" width="200px" src="../Imags/vaishalimenu2.avif" alt="#">
+                <div class="carousel-item">
+                    <img src="./Imags/spbiryanimenu3.webp" class="d-block w-100" alt="...">
                 </div>
-                <div class="col-md-3">
-                    <img height="200px" width="200px" src="../Imags/vaishalimenu3.avif" alt="#">
+                <div class="carousel-item">
+                    <img src="./Imags/spbiryanimenu5.webp" class="d-block w-100" alt="...">
                 </div>
-                <div class="col-md-3">
-                    <img height="200px" width="200px" src="../Imags/vaishalimenu4.avif" alt="#">
+                <div class="carousel-item">
+                    <img src="./Imags/spbiryanimenu2.webp" class="d-block w-100" alt="...">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden bg-danger">Previous</span>
+  </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden bg-danger">Next</span>
+  </button>
         </div>
     </div>
+
     <!-- Footer Section -->
     <footer class=" footer text-light pt-5 pb-3">
         <div class="container">
@@ -127,7 +135,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../script/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../script/jQscript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--------------navbar----------->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../Imags/logo1.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,10 +53,10 @@
 
     <!----------menu--------->
     <section class="pmenu">
-        <div class="khichadiheader " style="background-color: rgb(112, 33, 185);">
+        <div class="pheader">
             <a href="index.html"><button style="border: none; height: 2rem; width: 2rem;"><b>←</b></button></a>
-            <h2 class="text-center">Khichadi Menu</h2>
-            <img src="../Imags/khichadi.jpeg" height="200px" width="200px" alt="">
+            <h2 class="text-center">Dosa Menu</h2>
+            <img src="./Imags/dosa.avif" height="200px" width="200px" alt="">
         </div>
 
 
@@ -71,29 +68,51 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="card" style="width: 16rem;">
-                        <img src="../Imags/khichadi1.jpg" class="card-img-top" height="250px" alt="...">
+                        <img src="./Imags/Neer Dosa.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Moong Dal Khichdi</h5>
-                            <p>price:150</p>
+                            <h5 class="card-title">Neer Dosa</h5>
+                            <p>Price:180</p>
                             <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 16rem;">
-                        <img src="../Imags/khichadi2.jpg" class="card-img-top" alt="...">
+                        <img src="./Imags/Oats Dosa.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"> Masala Khichdi</h5>
-                            <p>price:220</p>
+                            <h5 class="card-title">Oats Dosa</h5>
+                            <p>price:300</p>
                             <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 16rem;">
-                        <img src="../Imags/khichadi3.jpg" class="card-img-top" alt="...">
+                        <img src="./Imags/Plain Dosa.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Daliya Khichdi</h5>
+                            <h5 class="card-title">Plain Dosa</h5>
+                            <p>price:250</p>
+                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 16rem;">
+                        <img src="./Imags/Masala Dosa.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Masala Dosa</h5>
+                            <p>price:200</p>
+                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-3">
+                    <div class="card" style="width: 16rem;">
+                        <img src="./Imags/Mix Dal Dosa.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mix Dal Dosa</h5>
                             <p>price:200</p>
                             <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
                         </div>
@@ -101,33 +120,17 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 16rem;">
-                        <img src="../Imags/khichadi4.jpg" class="card-img-top" alt="...">
+                        <img src="./Imags/Instant Rava Dosa.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Palak Khichdi</h5>
+                            <h5 class="card-title">Paneer Tikka Masala</h5>
                             <p>price:250</p>
                             <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem; height: 20rem;">
-                        <img src="../Imags/khichadi5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Gujarati Khichdi</h5>
-                            <p>price:180</p>
-                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
     </section>
-    <button id="btn">btn</button>
-    <h2 id="h1"></h2>
-
     <!-- Bootstrap Icons CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Cart Modal -->
@@ -144,7 +147,6 @@
                 <div class="modal-footer d-flex justify-content-between">
                     <h5 id="cart-total" class="mb-0"></h5>
                     <button class="btn btn-primary" onclick="handleOrderClick()">Order Now</button>
-
                 </div>
             </div>
         </div>
@@ -155,7 +157,8 @@
         ✅ <strong>Success!</strong> Your order has been placed.
         <button type="button" class="btn-close" onclick="hideOrderAlert()" aria-label="Close"></button>
     </div>
-    <script src="../script/script.js" defer></script>
+    <script src="./script/script.js" defer></script>
+
 </body>
 
 </html>
