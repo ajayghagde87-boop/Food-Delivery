@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    color: rgb(121, 76, 25);
+}
+
+.header img {
+    height: 200px;
+    width: 200px;
+}
+
+.navbar {
+    background-color: #ff8000;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    color: white;
+    /* Hides scroll line */
+    width: 100%;
+}
+
+.navbar .navbar-brand img {
+    height: 60px;
+    width: 80px;
+}
+
+.image-carousel-container {
+    position: relative;
+    overflow: hidden;
+    /* Hides scroll line */
+    width: 100%;
+}
+
+.image-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    /* Allows horizontal scroll with JS */
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.image-carousel::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+.image-carousel>div {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.image-carousel img {
+    max-width: 150px;
+    /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu .image-carousel div {
+    border: 3px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 4px 10px black;
+}
+
+.menu {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #ff8000;
+}
+
+.pheader {
+    background-color: rgb(43, 226, 150);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pheader img {
+    border-radius: 5px;
+}
+
+.khichadiheader {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.khichadiheader img {
+    border-radius: 7px;
+}
+
+.hotelmenu .row .col-md-4 img {
+    height: 300px;
+}
+
+.paneer-card img {
+    height: 200px;
+}
+
+#vaishali {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.added {
+    background-color: #d4edda;
+    /* Light green */
+    transition: background-color 0.3s;
+}
+
+.added-to-cart {
+    background-color: #9af1ae !important;
+    /* Light green */
+    transition: background-color 0.3s ease;
+}
+
+.ho:hover {
+    border: 5px solid greenyellow;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.menu .card:hover {
+    transform: scale(1.05);
+}
+
+.menu .card {
+    transition: transform 0.3s;
+}
