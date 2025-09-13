@@ -4,104 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Durvankur Dining Hall</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./style/style.css">
     <script src="./script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body>
-    <!--------------navbar----------->
-    <nav class="navbar navbar-expand-lg">
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-orange shadow-sm sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt="Logo" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex me-3">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <big><big><a href="#" onclick="showCartModal()" style="text-decoration: none; color: inherit;">
-  <i class="bi bi-cart position-relative" style="margin: 10px; cursor: pointer;">
-    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-        0
-        <span class="visually-hidden">items in cart</span>
-    </span>
-  </i>
-</a>
-</big></big>
+                <a href="#" onclick="showCartModal()" class="text-light position-relative">
+                    <i class="bi bi-cart fs-4"></i>
+                    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
             </div>
         </div>
     </nav>
-    <div class="hotelspbiryani ">
-        <h1 class="text-center" style="background-color: orange;">Durvankur Dining Hall</h1>
-        <div class="py-3" style="padding: 10px; background-color: rgb(58, 53, 53);">
-            <div class="img" style="display: flex; align-items: center; justify-content: center;"><img style=" border: 5px solid blueviolet; border-radius: 5px ;" src="./Imags/durvakur.png" height="300px" width="500px" alt=""></div>
 
+    <!-- Header -->
+    <header class="text-center py-4 bg-warning">
+        <h1 class="fw-bold">Durvankur Dining Hall</h1>
+    </header>
+
+    <!-- Restaurant Image -->
+    <section class="py-4 bg-dark">
+        <div class="container text-center">
+            <img src="./Imags/durvakur.png" class="img-fluid rounded shadow border border-3 border-primary" alt="Durvankur Dining Hall">
         </div>
-    </div>
-    <h4 class="text-center">Menu</h4>
-    <div class="container" style="padding: 10px; background-color: rgb(58, 53, 53); height:auto; width: 500px; border: 1px solid black;">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./Imags/spbiryanimenu6.webp" class="d-block w-100" alt="...">
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5">
+        <h4 class="text-center mb-3 fw-bold">Menu</h4>
+        <div class="bg-dark p-3 rounded shadow">
+            <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Imags/spbiryanimenu6.webp" class="d-block w-100 rounded" alt="Menu 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Imags/spbiryanimenu3.webp" class="d-block w-100 rounded" alt="Menu 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Imags/spbiryanimenu5.webp" class="d-block w-100 rounded" alt="Menu 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Imags/spbiryanimenu2.webp" class="d-block w-100 rounded" alt="Menu 4">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./Imags/spbiryanimenu3.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Imags/spbiryanimenu5.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Imags/spbiryanimenu2.webp" class="d-block w-100" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden bg-danger">Previous</span>
-  </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden bg-danger">Next</span>
-  </button>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer Section -->
-    <footer class=" footer text-light pt-5 pb-3">
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light pt-5 pb-3 mt-5">
         <div class="container">
             <div class="row">
-
-                <!-- About Section -->
+                <!-- About -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">FoodCircle</h5>
+                    <h5 class="fw-bold">FoodCircle</h5>
                     <p>Delicious meals delivered at your doorstep. Fresh, fast, and affordable food for everyone.</p>
                 </div>
-
                 <!-- Quick Links -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">Quick Links</h5>
+                    <h5 class="fw-bold">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">Home</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Menu</a></li>
@@ -109,32 +104,29 @@
                         <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-
                 <!-- Contact Info -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">Contact</h5>
+                    <h5 class="fw-bold">Contact</h5>
                     <p><i class="bi bi-geo-alt-fill"></i> Pune, Maharashtra</p>
-                    <p><i class="bi bi-telephone-fill"></i>+91 7720877130</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91 7720877130</p>
                     <p><i class="bi bi-envelope-fill"></i> support@foodieexpress.com</p>
                 </div>
-
                 <!-- Social Media -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">Follow Us</h5>
+                    <h5 class="fw-bold">Follow Us</h5>
                     <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
                     <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
                     <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
                     <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
                 </div>
-
             </div>
-
             <!-- Copyright -->
             <div class="text-center pt-3 border-top">
                 <p class="mb-0">&copy; 2025 FoodCircle | All Rights Reserved</p>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
