@@ -4,104 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>SP's Biryani</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Navbar */
+        
+        .navbar-brand img {
+            height: 50px;
+        }
+        /* Biryani Section */
+        
+        .hotelspbiryani h1 {
+            background-color: orange;
+            padding: 10px;
+            text-align: center;
+        }
+        /* .hotelspbiryani .img img {
+            border: 5px solid blueviolet;
+            border-radius: 5px;
+        }
+        /* Carousel */
+        /* .carousel-item img {
+            object-fit: cover;
+            height: 350px;
+        } */
+        /* Footer */
+        /* .footer {
+            background: #222;
+        } */
+        /* .footer h5 {
+            color: orange;
+        }
+         */
+        /* .footer a:hover {
+            color: orange !important;
+        } */
+    </style>
 </head>
 
 <body>
-    <!--------------navbar----------->
-    <nav class="navbar navbar-expand-lg">
+    <!-------------- Navbar ----------->
+    <nav class="navbar navbar-expand-lg bg-orange shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <big><big><a href="#" onclick="showCartModal()" style="text-decoration: none; color: inherit;">
-  <i class="bi bi-cart position-relative" style="margin: 10px; cursor: pointer;">
-    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-        0
-        <span class="visually-hidden">items in cart</span>
-    </span>
-  </i>
-</a>
-</big></big>
+
+                <!-- Cart Icon -->
+                <a href="#" onclick="showCartModal()" class="text-light position-relative">
+                    <i class="bi bi-cart fs-4">
+            <span id="cart-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </i>
+                </a>
             </div>
         </div>
     </nav>
-    <div class="hotelspbiryani ">
-        <h1 class="text-center" style="background-color: orange;">SP's Biryani</h1>
-        <div class="py-3" style="padding: 10px; background-color: rgb(58, 53, 53);">
-            <div class="img" style="display: flex; align-items: center; justify-content: center;"><img style=" border: 5px solid blueviolet; border-radius: 5px ;" src="./Imags/sps biryani.jpg" height="300px" width="500px" alt=""></div>
 
+    <!-------------- SP's Biryani Section ----------->
+    <div class="hotelspbiryani">
+        <h1>SP's Biryani</h1>
+        <div class="py-3 bg-dark d-flex justify-content-center">
+            <div class="img">
+                <img src="./Imags/sps biryani.jpg" height="350" width="550" alt="SP's Biryani">
+            </div>
         </div>
     </div>
-    <h4 class="text-center">Menu</h4>
-    <div class="container" style="padding: 10px; background-color: rgb(58, 53, 53); height:auto; width: 500px; border: 1px solid black;">
+
+    <!-------------- Menu Section ----------->
+    <h4 id="menu" class="text-center my-3">Menu</h4>
+    <div class="container bg-dark p-3 mb-5" style="max-width: 600px; border-radius: 2px;">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./Imags/spbiryanimenu6.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Imags/spbiryanimenu3.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Imags/spbiryanimenu5.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Imags/spbiryanimenu2.webp" class="d-block w-100" alt="...">
-                </div>
+                <div class="carousel-item active"><img src="./Imags/spbiryanimenu6.webp" class="d-block w-100" alt="Menu 1"></div>
+                <div class="carousel-item"><img src="./Imags/spbiryanimenu3.webp" class="d-block w-100" alt="Menu 2"></div>
+                <div class="carousel-item"><img src="./Imags/spbiryanimenu5.webp" class="d-block w-100" alt="Menu 3"></div>
+                <div class="carousel-item"><img src="./Imags/spbiryanimenu2.webp" class="d-block w-100" alt="Menu 4"></div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden bg-danger">Previous</span>
-  </button>
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden bg-danger">Next</span>
-  </button>
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer class=" footer text-light pt-5 pb-3">
+    <!-------------- Footer Section ----------->
+    <footer class="footer text-light pt-5 pb-3">
         <div class="container">
             <div class="row">
-
-                <!-- About Section -->
+                <!-- About -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">FoodCircle</h5>
+                    <h5 class="fw-bold">FoodCircle</h5>
                     <p>Delicious meals delivered at your doorstep. Fresh, fast, and affordable food for everyone.</p>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">Quick Links</h5>
+                    <h5 class="fw-bold">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">Home</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Menu</a></li>
@@ -110,23 +137,22 @@
                     </ul>
                 </div>
 
-                <!-- Contact Info -->
+                <!-- Contact -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">Contact</h5>
+                    <h5 class="fw-bold">Contact</h5>
                     <p><i class="bi bi-geo-alt-fill"></i> Pune, Maharashtra</p>
-                    <p><i class="bi bi-telephone-fill"></i>+91 7720877130</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91 7720877130</p>
                     <p><i class="bi bi-envelope-fill"></i> support@foodieexpress.com</p>
                 </div>
 
-                <!-- Social Media -->
+                <!-- Social -->
                 <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="text-uppercase fw-bold">Follow Us</h5>
+                    <h5 class="fw-bold">Follow Us</h5>
                     <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
                     <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
                     <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
                     <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
                 </div>
-
             </div>
 
             <!-- Copyright -->
@@ -135,6 +161,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS + jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cart Function -->
+    <script>
+        function showCartModal() {
+            alert("🛒 Your cart is empty!");
+        }
+    </script>
 </body>
 
 </html>
