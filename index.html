@@ -14,18 +14,7 @@
 </head>
 
 <body>
-    <!-------------header------------>
-    <section class="header">
-        <h1 class="text-center">Welcome to Food Circle</h1>
-        <div class="container">
-            <div class="row" style="height:fit-content;">
-                <div class="col-md-3" style="width: 16rem;"><img src="./Imags/header5.webp" alt=""></div>
-                <div class="col-md-3" style="width: 16rem;"><img src="./Imags/header4.png" alt=""></div>
-                <div class="col-md-3" style="width: 16rem;"><img src="./Imags/header2.webp" alt=""></div>
-                <div class="col-md-3" style="width: 16rem;"><img src="./Imags/header6.webp" alt=""></div>
-            </div>
-        </div>
-    </section>
+
     <!--------------navbar----------->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -65,65 +54,102 @@
         </div>
     </nav>
 
-    <!---------------menu----------->
+    <!-- Menu Section -->
+    <section id="menu" class="menu py-4">
+        <h3 class="text-center mb-4">What's in your mind</h3>
 
-    <section id="menu" class="menu py-2">
-        <h3 class="text-center py-3">What's in your mind</h3>
-        <div class="image-carousel-container py-3 d-flex">
-            <div id="imageCarousel" class="image-carousel">
+        <div class="container-fluid px-4">
+            <div class="d-flex overflow-auto gap-3 pb-3" style="scroll-snap-type: x mandatory;">
 
-                <div class="card text-center ">
-                    <a href="paneer.html"><img src="./Imags/paneer.jpeg" /></a>
-                    <p>Paneer</p>
+                <!-- Menu Card Template -->
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="paneer.html">
+                        <img src="./Imags/paneer.jpeg" class="card-img-top img-fluid rounded" alt="Paneer">
+                    </a>
+                    <p class="mt-2">Paneer</p>
                 </div>
-                <div class="card text-center">
-                    <a href="chole bhature.html"><img src="./Imags/chole bhature.jpeg" /></a>
-                    <p>Chole Bhature</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="chole bhature.html">
+                        <img src="./Imags/chole bhature.jpeg" class="card-img-top img-fluid rounded" alt="Chole Bhature">
+                    </a>
+                    <p class="mt-2">Chole Bhature</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="khichadi.html"><img src="./Imags/khichadi.jpeg" alt="Khichdi" /></a>
-                    <p>Khichdi</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="khichadi.html">
+                        <img src="./Imags/khichadi.jpeg" class="card-img-top img-fluid rounded" alt="Khichdi">
+                    </a>
+                    <p class="mt-2">Khichdi</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="juice.html"><img src="./Imags/juice.webp" alt="Juice" /></a>
-                    <p>Juice</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="juice.html">
+                        <img src="./Imags/juice.webp" class="card-img-top img-fluid rounded" alt="Juice">
+                    </a>
+                    <p class="mt-2">Juice</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="biryani.html"><img src="./Imags/biryani.jpeg" alt="Biryani" /></a>
-                    <p>Biryani</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="biryani.html">
+                        <img src="./Imags/biryani.jpeg" class="card-img-top img-fluid rounded" alt="Biryani">
+                    </a>
+                    <p class="mt-2">Biryani</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="cutlet.html"><img src="./Imags/cutlet.jpeg" alt="Cutlet" /></a>
-                    <p>Cutlet</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="cutlet.html">
+                        <img src="./Imags/cutlet.jpeg" class="card-img-top img-fluid rounded" alt="Cutlet">
+                    </a>
+                    <p class="mt-2">Cutlet</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="dosa.html"><img src="./Imags/dosa.avif" alt="Dosa" /></a>
-                    <p>Dosa</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="dosa.html">
+                        <img src="./Imags/dosa.avif" class="card-img-top img-fluid rounded" alt="Dosa">
+                    </a>
+                    <p class="mt-2">Dosa</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="dhokla.html"><img src="./Imags/dhokla.jpeg" alt="Dhokla" /></a>
-                    <p>Dhokla</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="dhokla.html">
+                        <img src="./Imags/dhokla.jpeg" class="card-img-top img-fluid rounded" alt="Dhokla">
+                    </a>
+                    <p class="mt-2">Dhokla</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="fish.html"><img src="./Imags/fish.jpeg" alt="Fish" /></a>
-                    <p>Fish</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="fish.html">
+                        <img src="./Imags/fish.jpeg" class="card-img-top img-fluid rounded" alt="Fish">
+                    </a>
+                    <p class="mt-2">Fish</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="cake.html"><img src="./Imags/cake.jpeg" alt="Cake" /></a>
-                    <p>Cake</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="cake.html">
+                        <img src="./Imags/cake.jpeg" class="card-img-top img-fluid rounded" alt="Cake">
+                    </a>
+                    <p class="mt-2">Cake</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="coffee.html"><img src="./Imags/coffee.jpeg" alt="Coffee" /></a>
-                    <p>Coffee</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="coffee.html">
+                        <img src="./Imags/coffee.jpeg" class="card-img-top img-fluid rounded" alt="Coffee">
+                    </a>
+                    <p class="mt-2">Coffee</p>
                 </div>
-                <div class="card  text-center">
-                    <a href="french fries.html"><img src="./Imags/french fries.jpeg" alt="French Fries" /></a>
-                    <p>French Fries</p>
+
+                <div class="card text-center flex-shrink-0" style="width: 150px; scroll-snap-align: start;">
+                    <a href="french fries.html">
+                        <img src="./Imags/french fries.jpeg" class="card-img-top img-fluid rounded" alt="French Fries">
+                    </a>
+                    <p class="mt-2">French Fries</p>
                 </div>
 
             </div>
         </div>
     </section>
+
 
     <div class="container py-5">
         <h3 class="text-center mb-4">🍴 Restaurants in Pune</h3>
@@ -134,41 +160,41 @@
     </div>
 
     <section class="hotelmenu">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-md-4">
-                    <div class="card" style="width: 22rem;">
-                        <img src="./Imags/hotelvaishali.jpeg" class="card-img-top" alt="...">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card h-100">
+                        <img src="./Imags/hotelvaishali.jpeg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">Vaishali</h3>
                             <p class="card-text">South Indian</p>
                             <p class="text-muted">⭐ 4.1 • 25-35 min </p>
-                            <a href="Vaishali.html" id="Vaishali" class="btn btn-primary">View Menu</a>
+                            <a href="Vaishali.html" class="btn btn-primary w-100">View Menu</a>
 
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card" style="width: 22rem;">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card h-100">
                         <img src="./Imags/sps biryani.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">SP's Biryani House</h3>
                             <p class="card-text">Biryani, Mughlai</p>
                             <p class="text-muted">⭐ 4.5 • 30-40 min </p>
-                            <a href="spbiryani.html" class="btn btn-primary">View Menu</a>
+                            <a href="spbiryani.html" class="btn btn-primary w-100">View Menu</a>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 22rem;">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card h-100">
                         <img src="./Imags/german bekri.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">German Bakery</h3>
                             <p class="card-text">Bakery, Continental</p>
                             <p class="text-muted">⭐ 4.4 • 25-35 min </p>
-                            <a href="germanbakery.html" class="btn btn-primary">View Menu</a>
+                            <a href="germanbakery.html" class="btn btn-primary w-100">View Menu</a>
 
                         </div>
                     </div>
@@ -176,38 +202,38 @@
 
             </div>
             <div class="row py-3">
-                <div class="col-md-4">
-                    <div class="card" style="width: 22rem;">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card h-100">
                         <img src="./Imags/durvakur.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">Durvankur Dining Hall</h3>
                             <p class="card-text">Thali, Indian</p>
                             <p class="text-muted">⭐ 4.3 • 15-20 min </p>
-                            <a href="durvakur.html" class="btn btn-primary">View Menu</a>
+                            <a href="durvakur.html" class="btn btn-primary w-100">View Menu</a>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 22rem;">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card h-100">
                         <img src="./Imags/goodluck cafe.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">Goodluck cafe</h3>
                             <p class="card-text">Irani, Mughlai</p>
                             <p class="text-muted">⭐ 4.2 • 20-25 min </p>
-                            <a href="goodluck.html" class="btn btn-primary">View Menu</a>
+                            <a href="goodluck.html" class="btn btn-primary w-100">View Menu</a>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 22rem;">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card h-100">
                         <img src="./Imags/cafe petar.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">Cafe Peter</h3>
                             <p class="card-text">Cafe, Korean, Fast Food</p>
                             <p class="text-muted">⭐ 4.1 • 25-35 min </p>
-                            <a href="cafepeter.html" class="btn btn-primary">View Menu</a>
+                            <a href="cafepeter.html" class="btn btn-primary w-100">View Menu</a>
 
                         </div>
                     </div>
