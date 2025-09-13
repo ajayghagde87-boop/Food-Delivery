@@ -2,138 +2,143 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French Fries Menu</title>
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js" defer></script>
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body>
-    <!--------------navbar----------->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./Imags/logo1.png" alt="Logo" style="max-height: 40px;" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item">
                         <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
+
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <big><big><a href="#" onclick="showCartModal()" style="text-decoration: none; color: inherit;">
-  <i class="bi bi-cart position-relative" style="margin: 10px; cursor: pointer;">
-    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-        0
-        <span class="visually-hidden">items in cart</span>
-    </span>
-  </i>
-</a>
-</big></big>
+
+                <a href="#" onclick="showCartModal()" class="ms-3 text-decoration-none text-dark position-relative" aria-label="Cart">
+                    <i class="bi bi-cart" style="font-size: 1.5rem;">
+            <span id="cart-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+              <span class="visually-hidden">items in cart</span>
+            </span>
+          </i>
+                </a>
             </div>
         </div>
     </nav>
 
-    <!----------menu--------->
-    <section class="pmenu">
-        <div class="pheader">
-            <a href="index.html"><button style="border: none; height: 2rem; width: 2rem;"><b>←</b></button></a>
-            <h2 class="text-center">French Fries Menu</h2>
-            <img src="./Imags/french fries.jpeg" height="200px" width="200px" alt="">
-        </div>
-
-
+    <!-- Menu Header -->
+    <section class="pmenu text-center my-4">
+        <a href="index.html" class="btn btn-outline-secondary mb-3" style="width: 2rem; height: 2rem;">←</a>
+        <h2 class="mb-3">French Fries Menu</h2>
+        <img src="./Imags/french fries.jpeg" alt="French Fries" class="img-fluid rounded" style="max-height: 200px;" />
     </section>
 
-    <!--------card-------->
-    <section class="paneer-card py-3">
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <img src="./Imags/Steak Fries.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
+    <!-- Card Section -->
+    <section class="py-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Card: Steak Fries -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./Imags/Steak Fries.webp" class="card-img-top img-fluid" alt="Steak Fries" />
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Steak Fries</h5>
-                            <p>Price:180</p>
-                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                            <p>Price: 180</p>
+                            <a href="#" class="btn btn-outline-success mt-auto" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <img src="./Imags/Battered Fries.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
+
+                <!-- Battered Fries -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./Imags/Battered Fries.webp" class="card-img-top img-fluid" alt="Battered Fries" />
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Battered Fries</h5>
-                            <p>price:300</p>
-                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                            <p>Price: 300</p>
+                            <a href="#" class="btn btn-outline-success mt-auto" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <img src="./Imags/Crinkle-Cut Fries.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
+
+                <!-- Crinkle-Cut Fries -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./Imags/Crinkle-Cut Fries.webp" class="card-img-top img-fluid" alt="Crinkle-Cut Fries" />
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Crinkle-Cut Fries</h5>
-                            <p>price:250</p>
-                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                            <p>Price: 250</p>
+                            <a href="#" class="btn btn-outline-success mt-auto" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <img src="./Imags/Natural-Cut Fries.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
+
+                <!-- Natural-Cut Fries -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./Imags/Natural-Cut Fries.webp" class="card-img-top img-fluid" alt="Natural-Cut Fries" />
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Natural-Cut Fries</h5>
-                            <p>price:200</p>
-                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                            <p>Price: 200</p>
+                            <a href="#" class="btn btn-outline-success mt-auto" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row py-3">
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <img src="./Imags/Classic Straight-Cut Fries.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
+
+                <!-- Classic Straight-Cut Fries -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./Imags/Classic Straight-Cut Fries.webp" class="card-img-top img-fluid" alt="Classic Straight-Cut Fries" />
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Classic Straight-Cut Fries</h5>
-                            <p>price:200</p>
-                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                            <p>Price: 200</p>
+                            <a href="#" class="btn btn-outline-success mt-auto" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <img src="./Imags/Shoestring or Matchstick Fries.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
+
+                <!-- Shoestring Fries -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./Imags/Shoestring or Matchstick Fries.webp" class="card-img-top img-fluid" alt="Shoestring Fries" />
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Shoestring or Matchstick Fries</h5>
-                            <p>price:250</p>
-                            <a href="#" class="btn btn-outline-success" onclick="handleAddClick(this)">Add</a>
+                            <p>Price: 250</p>
+                            <a href="#" class="btn btn-outline-success mt-auto" onclick="handleAddClick(this)">Add</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- Bootstrap Icons CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Cart Modal -->
+
     <!-- Cart Modal -->
     <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -153,12 +158,7 @@
         </div>
     </div>
 
-    <!-- Success Alert -->
+    <!-- Order Success Alert -->
     <div id="order-success-alert" class="alert alert-success alert-dismissible fade show position-fixed bottom-0 end-0 m-4 d-none" role="alert" style="z-index: 1055;">
         ✅ <strong>Success!</strong> Your order has been placed.
-        <button type="button" class="btn-close" onclick="hideOrderAlert()" aria-label="Close"></button>
-    </div>
-    <script src="./script/script.js" defer></script>
-</body>
-
-</html>
+        <
