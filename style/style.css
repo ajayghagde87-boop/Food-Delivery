@@ -3,6 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .header {
     width: 100%;
